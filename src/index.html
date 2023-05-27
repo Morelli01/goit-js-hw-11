@@ -1,27 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Image Search</title>
-  <!-- Підключення стилів бібліотеки SimpleLightbox -->
-  <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Page title</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
 
 <body>
   <form class="search-form" id="search-form">
-    <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
-    <button type="submit" class="search-button">Search</button>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <input class="search-form__input" type="text" name="searchQuery" autocomplete="off"
+      placeholder="Search images..." />
+    <button class="button search-form__btn" type="submit">Search</button>
   </form>
+  <div class="gallery"></div>
+  <button type="button" class="button load-more">Load more</button>
 
-  <div class="gallery">
-  </div>
-
-  <button class="load-more" style="display: none">Load More</button>
-
-
-  <script src="./index.js" type="module"></script>
+  <script type="module" src="./index.js"></script>
 </body>
 
 </html>
